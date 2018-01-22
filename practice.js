@@ -18,6 +18,14 @@ var name = 'Tyler';
 */
 
 //Code Here
+function isTyler(name){
+  if(name === "Tyler"){
+    return true;
+  }
+  else {
+    return false;
+  }
+}
 
 
 
@@ -28,6 +36,9 @@ var name = 'Tyler';
 */
 
 //Code Here
+function getName(){
+  return prompt("What is your name?");
+}
 
 
 
@@ -41,7 +52,10 @@ var name = 'Tyler';
 */
 
 //Code Here
-
+function welcome(){
+  let userName = getName();
+  alert("Welcome," + ' ' + userName);
+}
 
 
 ////////// PROBLEM 4 //////////
@@ -51,6 +65,9 @@ var name = 'Tyler';
 */
 
 //Answer Here
+// Arguments are used when actually invoking a function. Parameters are just placeholders for arguments.
+
+
 
 
 
@@ -61,6 +78,14 @@ var name = 'Tyler';
 */
 
 //Answer Here
+//null, false, 0, "", undefined, NaN
+// You can check for false values using an if statement:
+/*if(value === false){
+  return "This is false";
+} else {
+  return "This is true";
+} */
+
 
 
 
@@ -71,6 +96,10 @@ var name = 'Tyler';
 */
 
 //Code Here
+function myName(){
+  let name = "Zac";
+  return name;
+}
   
 
 
@@ -79,6 +108,9 @@ var name = 'Tyler';
 */
 
 //Code Here
+let newMyName = function(){
+  return myName();
+}
 
 
 
@@ -87,6 +119,7 @@ var name = 'Tyler';
 */
 
 // Code Here
+// alert(newMyName());
 
 
 
@@ -97,6 +130,9 @@ var name = 'Tyler';
 */
 
 //Code Here
+function outerFn(){
+  return () => "Zac";
+}
 
 
 
@@ -105,6 +141,8 @@ var name = 'Tyler';
 */
 
 //Code Here
+const innerFn = outerFn();
+
 
 
 
@@ -112,4 +150,6 @@ var name = 'Tyler';
   Now invoke innerFn.
 */
 
+
 // Code Here
+innerFn();
